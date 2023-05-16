@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div class="container grid">
+            <div>Logo here</div>
+            <ul>
+                <li>Nav items go here</li>
+                <li>Nav items go here</li>
+                <li>Nav items go here</li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container">
+            <h1>Design system</h1>
+        </div>
+    </header>
+
+    <main>
+        <div class="container grid">
+            <div>
+                <section id="colours" class="flow">
+                    <h2 class="numbered-title"><span>01</span> Colours</h2>
+
+                    <div class="grid" style="grid-template-columns: 33% 33% 33%" ;>
+                        <div>
+                            <div class="colourblock text-dark" id="primary">
+                                <p class="text-light">Primary</p>
+                            </div>
+                            Primary rgb(25, 78, 123)
+                        </div>
+                        <div>
+                            <div class="colourblock text-dark" id="secondary">
+                                <p class="text-light">Secondary</p>
+                            </div>
+                            Secondary rgb(37, 131, 197)
+                        </div>
+
+                        <div>
+                            <div class="colourblock text-dark" id="tertiary">
+                                <p class="text-dark">Tertiary</p>
+                            </div>
+                            Tertiary rgb(37, 131, 197)
+                        </div>
+
+                    </div>
+                </section>
+
+                <section id="typography" class="flow">
+                    <h2 class=" numbered-title"><span>02</span> Typography</h2>
+
+                    <div class="flex">
+                        <div class="flow" style="flex-basis: 100%;">
+                            <div>
+                                <p class="text-dark">Heading 1 - Source sans 4.5em</p>
+                                <p class="fs-h1 bold display">Heading 1</p>
+                            </div>
+                            <div>
+                                <p class="text-dark">Heading 2 - Source sans 3em</p>
+                                <p class="fs-h2 bold display">Heading 2</p>
+                            </div>
+                            <div>
+                                <p class="text-dark">Heading 3 - Source sans 2em</p>
+                                <p class="fs-h3 bold display">Heading 3</p>
+                            </div>
+                            <div>
+                                <p class="text-dark">Heading 4 - Source sans 1.75em</p>
+                                <p class="fs-h4 bold display">Heading 4</p>
+                            </div>
+                            <div>
+                                <p class="text-dark">Heading 5 - Source sans 1.25em</p>
+                                <p class="fs-h5 bold display">Heading 5</p>
+                            </div>
+
+                        </div>
+                        <div class="flow" style="flex-basis: 100%;">
+                            <div>
+                                <p class="text-dark">Subheading - Source sans 1.75em</p>
+                                <p class="fs-h4 bold display">This is a subheading</p>
+                            </div>
+                            <div>
+                                <p class="text-dark bold">Paragraph text - Source sans 1em</p>
+                                <p class="fs-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id illum
+                                    placeat dolorem
+                                    labore totam esse voluptatibus. Libero cumque eum fuga. Velit odit corporis ullam
+                                    suscipit consequuntur cum, temporibus quisquam porro!</p>
+                            </div>
+
+                            <div>
+                                <p class="text-dark bold">Blockquote</p>
+                                <blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod vel recusandae
+                                    aliquam. Fuga iste earum, quaerat tempora autem deleniti magnam, at delectus fugiat
+                                    tenetur molestiae qui quo quibusdam alias cum!</p>
+                            </div>
+
+                            <div>
+                                <p class="text-dark bold">Hyperlinks</p>
+                                <p><a href="#">This is a link</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="buttons" class="flow">
+                    <h2 class=" numbered-title"><span>03</span> Buttons</h2>
+                    <button>Default</button>
+                    <button class="btn-primary">Primary</button>
+                    <button class="btn-dark">Primary dark</button>
+                    <button class="btn-light">Primary light</button>
+                </section>
+
+                <section id="cards" class="flow">
+                    <h2 class=" numbered-title"><span>04</span> Cards</h2>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr; grid-gap: var(--gap);">
+                        <div class="card">
+                            <div class="title">
+                                <h3 class="fs-h5 mb">Example card</h3>
+                            </div>
+                            <p class="mb">Descriptive text here.</p>
+                            <button class="btn-primary">Go to item</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="title">
+                                <h3 class="fs-h5 mb">Teaching and learning</h3>
+                            </div>
+                            <p class="mb">Information for teaching assistants, teachers and subject leaders.</p>
+                            <button class="btn-primary">Read more</button>
+                        </div>
+
+                        <div class="card">
+                            <div class="title">
+                                <h3 class="fs-h5 mb">Premises, Security, Health and Safety</h3>
+                            </div>
+                            <p class="mb">Lorem ipsum dolor sit amet, sapien etiam, nunc amet dolor ac odio mauris
+                                justo.</p>
+                            <button class="btn-primary">Read more</button>
+                        </div>
+
+                    </div>
+                </section>
+
+            </div>
+
+
+            <div id="sidebar">
+                Sidebar
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            Footer
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<style>
+    /* ---------------------    */
+    /* Design system demo       */
+    /* ---------------------    */
+
+    section {
+        margin-bottom: 3em;
+    }
+
+    .colourblock {
+        border: 1px solid var(--clr-dark);
+        height: 5rem;
+        text-align: left;
+        padding: 3em 1em 1em 0.5em;
+    }
+
+    #black {
+        background-color: var(--clr-black);
+    }
+
+    #primary {
+        background-color: var(--clr-primary);
+    }
+
+    #secondary {
+        background-color: var(--clr-secondary);
+    }
+
+    #tertiary {
+        background-color: var(--clr-tertiary);
+    }
+</style>
